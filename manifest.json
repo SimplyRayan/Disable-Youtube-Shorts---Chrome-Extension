@@ -1,0 +1,16 @@
+{
+  "name": "Disable YoutTube #SHORTS",
+  "description": "PLAY YOUTUBE SHORTS IN THE REGULAR PLAYER",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": { "16": "yt-logo.png",
+    "48": "yt-logo.png",
+   "128": "yt-logo.png" },
+  "content_scripts":[
+    {
+      "matches":["https://www.youtube.com/*"],
+      "run_at": "document_idle",
+      "js":["script.js"]
+    }
+  ]
+}
